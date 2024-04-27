@@ -6,7 +6,28 @@ export default function Index() {
   return (
     <main>
       <Nav title="Netlify Workshop" />
-
+      <form name="contact" data-netlify="true">
+        <p>
+          <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+      <form name="contact" data-netlify="true" hidden>
+        <p>
+          <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
       <section className="flex columns">
         <div>
           <h2>Rendering strategies</h2>
@@ -92,9 +113,9 @@ export default function Index() {
         </div>
       </section>
       <hr></hr>
-          <Link href="https://github.com/netlify/netlify-workshop/">
-             https://github.com/netlify/netlify-workshop/
-          </Link>
+      <Link href="https://github.com/netlify/netlify-workshop/">
+        https://github.com/netlify/netlify-workshop/
+      </Link>
     </main>
   );
 }
