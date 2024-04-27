@@ -17,7 +17,7 @@ export default function Index() {
           <button type="submit">Send</button>
         </p>
       </form>
-      <form name="contact" data-netlify="true" hidden>
+      <form name="contact-hidden" data-netlify="true" hidden>
         <p>
           <label>Name <input type="text" name="name" /></label>
         </p>
